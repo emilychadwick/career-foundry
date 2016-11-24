@@ -1,1 +1,1 @@
-# career-foundry
+# CF template
