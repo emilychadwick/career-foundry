@@ -1,22 +1,22 @@
 /*home page*/
 
-.jumbotron-index {
+.jumbotron {
   background-image: url("../img/mountain-2.jpg");
   background-size: cover;
 }
-.jumbotron-index p {
+.jumbotron p {
   color: white;
 }
-.jumbotron-index h1 {
+.jumbotron h1 {
   color: white;
   text-align:center;
 }
 
-.container-index {
+.container {
   text-align: center;
 }
 
-.column-index {
+.col-md-4 {
   text-align: center;
   background-color: #ade6d8;
   border-radius: 10px;
@@ -24,25 +24,31 @@
   width: 30%;
 }
 
-.row-index {
+.row {
   display: inline-block;
 }
 
-#welcome-index {
+#welcome {
   font-family: Handlee, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 /*about page*/
 
 .container-about {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
+  background-image: url("../img/about.jpg");
+  background-size:cover;
+  height: 250px;
+  line-height: 250px;
 }
 
 .header-about h1 {
-  text-align:center;
+  text-align:left;
   margin: 20px;
   text-transform: uppercase;
+  vertical-align: middle;
+  color: white;
 }
 
 .image-about {
@@ -53,41 +59,39 @@
   margin-left: 20px;
 }
 
-.intro-about {
+.row-about {
+  margin: 10px 10px 10px 145px;
+}
+
+.intro {
   text-align: center;
   background-color: #ade6d8;
-  margin-left: 15px;
-  margin-right: 15px;
+}
+
+.skills {
+  background-color: #ade6d8;
 }
 
 .column-about {
   display: inline-block;
   float: left;
-  width: 30%;
-  padding: 0px;
+  width: 40%;
+  padding: 10px;
   height: 204px;
   border-radius: 10px;
+  margin: 10px;
 }
 
 .main-text {
   clear:both;
   padding-top: 5px;
   padding-bottom: 5px;
+  text-align: center;
 }
 
 #about-image {
   width: 100%;
   border-radius: 10px;
-}
-
-.skills-about {
-  background-color: #f58b75;
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
-#skills-list-about {
-  margin-left: 50px;
 }
 
 /*contact page*/
@@ -103,7 +107,6 @@
 .jumbotron-contact h1 {
   color: #f58b75;
   text-align: center;
-  vertical-align: middle;
 }
 
 .column-contact {
@@ -139,26 +142,26 @@ li {
   font-family: Helvetica, Neue, Helvetica, Arial, sans-serif;
 }
 
-.intro-about p {
+.intro p {
   -webkit-margin-before: 0;
   font-family:Handlee, Helvetica, sans-serif;
   }
 
-.intro-about h2 {
+.intro h2 {
   font-family: Handlee, Helvetica, Futura, Arial, sans-serif;
 }
 
-.skills-about h3 {
+.skills h3 {
   text-align: center;
   /*text-transform: uppercase;*/
 }
 
-.main-about h3 {
+.main-text h3 {
   text-align: center;
   text-transform: uppercase;
 }
 
-.main-about p {
+.main-text p {
   text-align: center;
 }
 
