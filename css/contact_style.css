@@ -1,10 +1,38 @@
-body {
-  background-color: #ffffff;
-  color: #34495e;
+/*contact page*/
 
+.nav-about {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 20px 10px 20px;
 }
 
-.jumbotron {
+.nav-about ul {
+  float: right;
+  margin-right: 35px;
+}
+
+.nav-about ul li {
+  display:inline-block;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  font-family: Handlee, Helvetica, sans-serif;
+}
+
+.nav-about ul li a {
+  color: black;
+  text-decoration: none;
+  transition: color 600ms
+  web-transition:color 600ms;
+}
+
+.nav-about ul li a:hover {
+  color: #ade6d8;
+  text-decoration: none;
+}
+
+.jumbotron-contact {
   background-image: url("../img/pineapple.jpg");
   background-size: cover;
   height: 350px;
@@ -12,43 +40,45 @@ body {
   line-height: 350px;
 }
 
-.jumbotron h1 {
-  color: #f58b75;
+.jumbotron-contact h1 {
+  color: black;
   text-align: center;
-  vertical-align: middle;
 }
 
-.column {
+.column-contact {
   display:inline-block;
   float: left;
   width: 45%;
-  background-color: #f58b75;
+  background-color: #ade6d8;
   border-radius:10px;
   height: 170px;
   margin: 10px;
   padding: 10px;
 }
 
-.together {
+.together-contact {
   text-align:center;
   margin-left:30px;
 }
 
-.connect {
+.connect-contact {
   text-align: center;
 }
 
-/*Typography*/
+ /*Typography*/
 
 h1,
 h2,
-h3,
-p {
+h3 {
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+p,
+li {
+  font-family: Helvetica, Neue, Helvetica, Arial, sans-serif;
 }
 
 .back h6 {
   text-align: center;
   text-transform: uppercase;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-}
