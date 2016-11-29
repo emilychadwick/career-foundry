@@ -32,7 +32,7 @@
   text-decoration: none;
 }
 
-.jumbotron-contact {
+.main-contact {
   background-image: url("../img/pineapple.jpg");
   background-size: cover;
   height: 350px;
@@ -40,7 +40,7 @@
   line-height: 350px;
 }
 
-.jumbotron-contact h1 {
+.main-contact h1 {
   color: black;
   text-align: center;
 }
