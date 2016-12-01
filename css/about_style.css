@@ -2,7 +2,7 @@
   padding-top: 70.5px;
 }
 
-.nav-about {
+/*.nav-about {
   background-color: white;
   position: fixed;
   width: 100%;
@@ -31,10 +31,10 @@
 
 .nav-about ul li a:hover {
   color: #ade6d8;
-  text-decoration: none;
+  text-decoration: none;*/
 }
 
-.container-about {
+.about-image {
   width: 100%;
   margin: 0 auto;
   background-image: url("../img/about.jpg");
@@ -59,20 +59,20 @@
   margin-left: 20px;
 }
 
-.row-about {
+/*.row-about {
   margin: 10px 10px 10px 145px;
-}
+}*/
 
-.intro {
+/*.intro-about {
   text-align: center;
   background-color: #ade6d8;
-}
+}*/
 
-.skills {
+/*.skills-about {
   background-color: #ade6d8;
-}
+}*/
 
-.column-about {
+/*.column-about {
   display: inline-block;
   float: left;
   width: 40%;
@@ -80,7 +80,7 @@
   height: 204px;
   border-radius: 10px;
   margin: 10px;
-}
+}*/
 
 .main-text {
   clear:both;

@@ -30,7 +30,7 @@
   padding: 10px;
 }
 
-.row {
+.row-index {
   display: inline-block;
 }
 
@@ -51,78 +51,45 @@
   border-radius: 3%;
 }
 
-/*contact page*/
+/*about page*/
 
-.nav {
-  background-color: white;
-  position: fixed;
+.body-about {
+  padding-top: 70.5px;
+}
+
+.about-image {
   width: 100%;
-  top: 0;
-  padding: 20px 10px 20px;
-  z-index: 1;
+  margin: 0 auto;
+  background-image: url("../img/about.jpg");
+  background-size:cover;
+  height: 250px;
+  line-height: 250px;
 }
 
-.nav ul {
-  float: right;
-  margin-right: 35px;
-}
-
-.nav ul li {
-  display:inline-block;
+.header-about h1 {
+  text-align:left;
+  margin: 20px;
   text-transform: uppercase;
-  letter-spacing: .05em;
-  font-family: Handlee, Helvetica, sans-serif;
-}
-
-.nav ul li a {
-  color: black;
-  text-decoration: none;
-  transition: color 600ms
-  web-transition: color 600ms;
-}
-
-.nav ul li a:hover {
-  color: #ade6d8;
-  text-decoration: none;
-}
-
-.main-contact {
-  background-image: url("../img/pineapple.jpg");
-  background-size: cover;
-  height: 350px;
-  width: 100%;
-  line-height: 350px;
-}
-
-.main-contact h1 {
-  color: black;
-  text-align: center;
-}
-
-.together-contact {
-  text-align:center;
-  margin-left:55px;
-}
-
-.column-contact {
-  display:inline-block;
-  float: left;
-  width: 45%;
-  background-color: #ade6d8;
-  border-radius:10px;
-  height: 170px;
-  margin-right: 10px;
-  margin-top: 10px;
-  padding: 10px;
-}
-
-.connect-contact {
-  text-align: center;
-}
-
-.glyphicon:hover {
   color: white;
-  text-decoration: none;
+  padding-top: 8%;
+}
+
+.about-col {
+  background-color: #ade6d8;
+  margin: 3%;
+  padding-top: .5%;
+  padding-bottom: .5%;
+  padding-left: 3%;
+  padding-right: 3%;
+  border-radius: 3%;
+  font-size: 1.25em;
+}
+
+.main-text {
+  clear:both;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
 }
 
 /*FAQ page*/
@@ -167,8 +134,48 @@
   text-align: center;
 }
 
- /*Typography*/
+/*contact page*/
 
+.main-contact {
+  background-image: url("../img/pineapple.jpg");
+  background-size: cover;
+  height: 350px;
+  width: 100%;
+  line-height: 350px;
+}
+
+.main-contact h1 {
+  color: black;
+  text-align: center;
+}
+
+.together-contact {
+  text-align:center;
+  margin-left:55px;
+}
+
+.column-contact {
+  display:inline-block;
+  float: left;
+  width: 45%;
+  background-color: #ade6d8;
+  border-radius:10px;
+  height: 170px;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.connect-contact {
+  text-align: center;
+}
+
+.glyphicon:hover {
+  color: white;
+  text-decoration: none;
+}
+
+ /*Typography*/
 
 h1,
 h2,
@@ -190,6 +197,18 @@ li {
   font-family: Handlee, Helvetica, Futura, Arial, sans-serif;
 }
 
+.about-col h2 {
+  font-family: Handlee, Helvetica, Futura, Arial, sans-serif;
+}
+
+.about-col p {
+  font-family: Handlee, Helvetica, Futura, Arial, sans-serif;
+}
+
+.about-col li {
+  font-family: Handlee, Helvetica, Futura, Arial, sans-serif;
+}
+
 .skills h3 {
   text-align: center;
   /*text-transform: uppercase;*/
@@ -204,10 +223,37 @@ li {
   text-align: center;
 }
 
-.back h6 {
-  text-align: center;
-  text-transform: uppercase;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+/*navigation*/
+
+.nav {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 20px 10px 20px;
+  z-index: 1;
 }
 
-/*responsive sites*/
+.nav ul {
+  float: right;
+  margin-right: 35px;
+}
+
+.nav ul li {
+  display:inline-block;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  font-family: Handlee, Helvetica, sans-serif;
+}
+
+.nav ul li a {
+  color: black;
+  text-decoration: none;
+  transition: color 600ms
+  web-transition: color 600ms;
+}
+
+.nav ul li a:hover {
+  color: #ade6d8;
+  text-decoration: none;
+}
