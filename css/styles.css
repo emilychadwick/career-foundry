@@ -1,16 +1,58 @@
+/*all*/
+
+.body {
+  position: relative;
+}
+
+.nav {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 20px 10px 20px;
+  z-index: 1;
+}
+
+.nav ul {
+  float: right;
+  margin-right: 35px;
+}
+
+.nav ul li {
+  display:inline-block;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  font-family: Handlee, Helvetica, sans-serif;
+}
+
+.nav ul li a {
+  color: black;
+  text-decoration: none;
+  transition: color 600ms
+  web-transition: color 600ms;
+}
+
+.nav ul li a:hover {
+  color: #ade6d8;
+  text-decoration: none;
+}
+
+
 /*home page*/
 
 .jumbotron {
   background-image: url("../img/mountain-2.jpg");
   background-size: cover;
 }
-.jumbotron p {
-  color: white;
-}
+
 .jumbotron h1 {
   color: white;
   text-align:center;
   z-index: 1;
+}
+
+.jumbotron p {
+  color: white;
 }
 
 .container-fluid {
@@ -38,31 +80,18 @@
   font-family: Handlee, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-.container-work {
-  text-align: center;
-}
-
-.col-grid {
-  margin: 1%;
-  display: inline-block;
-}
-
-.img-work {
-  border-radius: 3%;
-}
-
 /*about page*/
 
-.body-about {
+/*.body-about {
   padding-top: 70.5px;
-}
+}*/
 
 .about-image {
-  width: 100%;
-  margin: 0 auto;
+  margin-left: -15px;
+  margin-right: -15px;
   background-image: url("../img/about.jpg");
   background-size:cover;
-  height: 250px;
+  height: 350px;
   line-height: 250px;
 }
 
@@ -82,7 +111,6 @@
   padding-left: 3%;
   padding-right: 3%;
   border-radius: 3%;
-  font-size: 1.25em;
 }
 
 .main-text {
@@ -92,13 +120,31 @@
   text-align: center;
 }
 
+/*portfolio page*/
+
+.container-work {
+  text-align: center;
+}
+
+.col-grid {
+  margin: 1%;
+  display: inline-block;
+}
+
+.img-work {
+  border-radius: 3%;
+}
+
 /*FAQ page*/
 
 .main-faq {
   background-image: url("../img/pexels-photo.jpg");
   background-size: cover;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: 1%;
+  margin-bottom: 1%;
   height: 350px;
-  width: 100%;
   line-height: 350px;
 }
 
@@ -136,37 +182,28 @@
 
 /*contact page*/
 
-.main-contact {
+.contact-image {
   background-image: url("../img/pineapple.jpg");
   background-size: cover;
   height: 350px;
-  width: 100%;
   line-height: 350px;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
-.main-contact h1 {
-  color: black;
-  text-align: center;
+.header-contact h1 {
+  color: white;
+  text-align: left;
+  margin: 20px;
+  text-transform: uppercase;
+  padding-top: 8%;
 }
 
-.together-contact {
-  text-align:center;
-  margin-left:55px;
-}
-
-.column-contact {
-  display:inline-block;
-  float: left;
-  width: 45%;
+.contact-column {
   background-color: #ade6d8;
-  border-radius:10px;
-  height: 170px;
-  margin-right: 10px;
-  margin-top: 10px;
-  padding: 10px;
-}
-
-.connect-contact {
+  border-radius: 3%;
+  margin: 3%;
+  padding: 3%;
   text-align: center;
 }
 
@@ -224,36 +261,3 @@ li {
 }
 
 /*navigation*/
-
-.nav {
-  background-color: white;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  padding: 20px 10px 20px;
-  z-index: 1;
-}
-
-.nav ul {
-  float: right;
-  margin-right: 35px;
-}
-
-.nav ul li {
-  display:inline-block;
-  text-transform: uppercase;
-  letter-spacing: .05em;
-  font-family: Handlee, Helvetica, sans-serif;
-}
-
-.nav ul li a {
-  color: black;
-  text-decoration: none;
-  transition: color 600ms
-  web-transition: color 600ms;
-}
-
-.nav ul li a:hover {
-  color: #ade6d8;
-  text-decoration: none;
-}
