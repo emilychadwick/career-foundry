@@ -4,16 +4,24 @@
   position: relative;
 }
 
-.nav {
+.emilyChadwick {
+  text-transform: uppercase;
+}
+
+.emilyChadwick a {
+  color: black;
+}
+
+.navbar {
   background-color: white;
-  position: fixed;
+  /*position: fixed;
   width: 100%;
   top: 0;
   padding: 20px 10px 20px;
-  z-index: 1;
+  z-index: 1;*/
 }
 
-.nav ul {
+/*.nav ul {
   float: right;
   margin-right: 35px;
 }
@@ -30,13 +38,31 @@
   text-decoration: none;
   transition: color 600ms
   web-transition: color 600ms;
-}
+}*/
 
-.nav ul li a:hover {
+.navbar-inverse .navbar-nav>li>a:hover{
   color: #ade6d8;
   text-decoration: none;
 }
 
+.anchor {
+  padding-top: 50px;
+}
+
+.slide h1 {
+  position: absolute;
+  color: white;
+  width: 100%;
+  text-transform: uppercase;
+  top: 40%;
+}
+
+.slide h4 {
+  position: absolute;
+  color: white;
+  width: 100%;
+  top: 50%;
+}
 
 /*home page*/
 
@@ -89,7 +115,7 @@
 .about-image {
   margin-left: -15px;
   margin-right: -15px;
-  background-image: url("../img/about.jpg");
+  background-image: url("../img/girl-book.jpg");
   background-size:cover;
   height: 350px;
   line-height: 250px;
@@ -138,7 +164,7 @@
 /*FAQ page*/
 
 .main-faq {
-  background-image: url("../img/pexels-photo.jpg");
+  background-image: url("../img/faq2.jpg");
   background-size: cover;
   margin-left: -15px;
   margin-right: -15px;
@@ -182,14 +208,14 @@
 
 /*contact page*/
 
-.contact-image {
+/*.contact-image {
   background-image: url("../img/pineapple.jpg");
   background-size: cover;
   height: 350px;
   line-height: 350px;
   margin-left: -15px;
   margin-right: -15px;
-}
+}*/
 
 .header-contact h1 {
   color: white;
@@ -210,6 +236,18 @@
 .glyphicon:hover {
   color: white;
   text-decoration: none;
+}
+
+#contact {
+  background-image: url("../img/contact-2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  margin-left: -15px;
+  margin-right: -15px;
+  color: white;
+  padding: 100px;
+  padding-top: 50px;
+  height: 400px;
 }
 
  /*Typography*/
@@ -258,6 +296,10 @@ li {
 
 .main-text p {
   text-align: center;
+}
+
+.slide h4 {
+  font-family: Handlee, Helvetica, Futura, Arial, sans-serif;
 }
 
 /*navigation*/
