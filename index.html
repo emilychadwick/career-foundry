@@ -24,47 +24,62 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar">
+    <!--navbar starts here-->
 
-    <!-- Main jumbotron for a primary marketing message or call to action
-    <div class="jumbotron">-->
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="emilyChadwick navbar-brand">
+              <a href="#">Home</a>
+            </div> <!--end emilyChadwick-->
+          </div> <!--end navbar-header-->
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <!--<li><a href="#index">Home</a></li>-->
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#faq">FAQs</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div> <!--end nav collapse-->
+        </div> <!--end container-fluid-->
+      </nav> --> <!--end nav-->
 
-    <div class="nav">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="faq.html">FAQs</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div><!--end nav-->
+    <!--index-->
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="index">
 
       <div id="carousel-index" class="carousel slide" data-ride="carousel">
 
         <!--Indicators-->
         <ol class="carousel-indicators">
-          <li data-target="#bridge" data-slide-to="0" class="active"></li>
-          <li data-target="#girl-book" data-slide-to="1" class="active"></li>
-          <li data-target="#retro-car" data-slide-to="2" class="active"></li>
+          <li data-target="#field" data-slide-to="0" class="active"></li>
+          <li data-target="#bridge" data-slide-to="1" class="active"></li>
+          <li data-target="#road" data-slide-to="2" class="active"></li>
         </ol> <!--end carousel-indicators-->
 
         <!--Wrapper for slides-->
         <div class="carousel-inner" role="listbox">
           <div class="item active">
-            <img src="img/bridge.jpg" alt="Brooklyn Bridge">
+            <img src="img/green-field.jpg" alt="field">
             <div class="carousel-caption">
             </div>
           </div>
 
           <div class="item">
-            <img src="img/girl-book.jpg" alt="Girl with Book">
+            <img src="img/sunset-bridge.jpg" alt="bridge">
             <div class="carousel-caption">
             </div>
           </div>
           <div class="item">
-            <img src="img/retro-car.jpg" alt="Slugbug">
+            <img src="img/night-road.jpg" alt="road">
             <div class="carousel-caption">
             </div>
           </div>
@@ -80,16 +95,14 @@
           <span class="sr-only">Next</span>
         </a>
 
-      </div>
+        <h1>Emily Chadwick</h1>
+        <!--<h4>I am a Seattle based software developer.<br>
+        I am also an excellent baker, and can quote the West Wing line for line.</h4>-->
 
-      <h1>Emily Chadwick</h1>
-        <p id="welcome">Welcome! I am a Seattle based software developer.<br>I am also an excellent baker, and can quote the West Wing verbatim.</p>
-          <a href="about.html">About </a> | <a href="contact.html"> Contact</a>
+      </div>
 
         <!--<div class="container">-->
     </div><!-- /container-fluid -->
-
-    <!--</div> /jumbotron -->
 
     <div class="container">
       <!-- Example row of columns -->
@@ -118,7 +131,9 @@
       </div><!-- /row -->
     </div> <!-- /container -->
 
-    <div class="container-fluid container-work">
+    <!--portfolio-->
+
+    <div class="container-fluid container-work anchor" id="portfolio">
       <h1>Work</h1>
       <div class="row" id="work">
 
@@ -126,53 +141,250 @@
           <div class="col-grid">
             <img src="img/kale.jpg" class="img-work img-responsive">
             For now, this is sample text.
-          </div>
-        </div>
+          </div><!--col-grid-->
+        </div><!--col-xs-12-->
         <div class="col-xs-12 col-s-6 col-md-3 col-lg-4">
           <div class="col-grid">
             <img src="img/man-book.jpg" class="img-work img-responsive">
             For now, this is sample text.
-          </div>
-        </div>
+          </div><!--end col-grid-->
+        </div><!-- col-xs-12-->
         <div class="col-xs-12 col-s-6 col-md-3 col-lg-4">
           <div class="col-grid">
             <img src="img/notepad-table.jpg" class="img-work img-responsive">
             For now, this is sample text.
-          </div>
-        </div>
+          </div><!--end col-grid-->
+        </div><!--end col-xs-12 etc-->
         <div class="col-xs-12 col-s-6 col-md-3 col-lg-4">
           <div class="col-grid">
             <img src="img/camera.jpg" class="img-work img-responsive">
             For now, this is sample text.
-          </div>
-        </div>
+          </div><!--end col-grid-->
+        </div><!--col-xs-12 etc-->
         <div class="col-xs-12 col-s-6 col-md-3 col-lg-4">
           <div class="col-grid">
             <img src="img/computer.jpg" class="img-work img-responsive">
             For now, this is sample text.
-          </div>
-        </div>
+          </div><!--end col-grid-->
+        </div><!--end col-xs-12 etc-->
         <div class="col-xs-12 col-s-6 col-md-3 col-lg-4">
           <div class="col-grid">
             <img src="img/headphones.jpg" class="img-work img-responsive">
             For now, this is sample text.
-          </div>
-        </div>
+          </div><!--end col-grid-->
+        </div><!--end col-xs-12 etc-->
         <div class="col-xs-12 col-s-6 col-md-3 col-lg-4">
           <div class="col-grid">
             <img src="img/woman-wallet.jpg" class="img-work img-responsive">
             For now, this is sample text.
-          </div>
-        </div>
+          </div><!--end col-grid-->
+        </div><!--end col-xs-12 etc-->
         <div class="col-xs-12 col-s-6 col-md-3 col-lg-4">
           <div class="col-grid">
             <img src="img/coffee-carafe.jpg" class="img-work img-responsive">
             For now, this is sample text.
-          </div>
-        </div>
+          </div><!--end col-grid-->
+        </div><!--end col-xs-12 etc-->
+      </div><!--end row -->
+    </div><!--end container-fluid-->
 
-      </div>
-    </div>
+    <!--end portfolio-->
+
+    <!--end index-->
+
+    <!--about-->
+
+    <div class="container-fluid anchor" id="about">
+
+      <div class="about-image">
+        <div class="header-about">
+          <h1>About Me</h1>
+        </div> <!--end header -->
+      </div> <!--about-image -->
+
+      <div class="container-fluid main-text">
+        <!--<h3>Still Interested?</h3>-->
+
+          <p>I currently work in field known as association management, which is management for non-profit organizations. As a manager, I approve website designs, email templates, plan events, and more. While I enjoy the work that I do, there was a small, but nagging voice in the back of my head telling me that I didn't just need to approve websites, but that I could create them! I didn't need to make content for emails and newsletters, I could code how they looked. So, I decided to take the leap.<br><br>
+
+          When not at work, or studying for my new career, I like to stay active! Living in Seattle brings all sorts of perks, including great hiking and biking trails, an easily accesible coast, and great craft ciders. I'm also an avid (and excellent) baker, love old-school hip-hop, and can quote the West Wing from start to finish.</p>
+
+      </div><!--end main-text-->
+
+      <div class="about-text">
+
+        <div class="skills-about col-xs-12 col-s-6 col-md-6 col-lg-6">
+          <div class="about-col">
+            <h2>I'm good at:</h2>
+            <ul id="skills-list" style="list-style:none">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Bootstrap</li>
+              <li>Photoshop</li>
+              <li>Project Management</li>
+              <li>Relationship Management</li>
+              <li>Event Planning</li>
+              <li>Budget and Timeline Management</li>
+              <li>Leadership</li>
+            </ul> <!--end skill list-->
+          </div><!--end about-col-->
+        </div><!--end skills-->
+      </div><!--end row-about-->
+
+        <div class="row-about">
+          <div class="intro-about col-xs-12 col-s-6 col-md-6 col-lg-6">
+            <div class="about-col">
+              <h2>I still want to learn:</h2>
+              <ul id="learn-list" style="list-style:none">
+                <li>JavaScript</li>
+                <li>Ruby on Rails</li>
+                <li>Angular</li>
+                <li>React</li>
+                <li>More about Git and GitHub</li>
+                <li>Anything else that will help me succeed!</li>
+              </ul><!--end learn-list-->
+            </div><!--end about col-->
+          </div> <!--end intro-->
+        </div> <!--end row-about-->
+
+    </div><!--end container-fluid-->
+
+    <!--end about-->
+
+    <!--FAQ-->
+
+    <div class="container-fluid anchor" id="faq">
+
+      <div class="main-faq">
+        <h1>FAQs</h1>
+      </div> <!--end main faq-->
+
+      <div class="panel-group" id="accordion">
+
+        <div class="panel panel-default">
+
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-plus"></span>
+              Why did you decide to switch careers?
+              </a>
+            </h4>
+          </div> <!--end panel-heading-->
+
+          <div id="collapseOne" class="panel-collapse collapse">
+            <div class="panel-body">
+            I currently work as a manager for an association management company, completing a variety of different tasks and projects each day. The variation of my work has always driven me, I function best when I get to work on new and exciting things on a regular basis, and it helps me to stay fresh rather than complacent. Much of what I do is work with websites: I update information and event pages, troubleshoot basic HTML when something looks off, and I approve big website changes or overhauls. As much as I find the work I do to be exciting, I wasn’t as fulfilled as I knew I could be. I spent meetings wondering why I couldn’t be building the websites myself and devoted myself to determining “why” something worked the way it did online. It wasn’t until I realized how much these processes drove me that I began to ask, “why isn’t this what I’m doing in the first place”? Thus, my adventure began!
+            </div> <!--end panel-body-->
+          </div> <!--end collapseOne panel-collapse-->
+        </div> <!--end panel-default-->
+
+        <div class="panel panel-default">
+
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-plus"></span>
+              Why web development?
+              </a>
+            </h4>
+          </div> <!--end panel-heading-->
+
+          <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+            When deciding where to focus my energy, I went back on forth on the merits between UX/UI design and web development. I worked on courses such as Free Code Camp to get a better idea of what the coding world looked like, and taught myself programs like Photoshop, InDesign, and Azure. While I’ll always have an eye on beautiful websites, my skills are best suited for coding. However, I’d like to work as a front-end developer, to help build what others can design. And who knows – maybe I’ll have the great typography suggestion that tweaks the website “just so”.
+            </div> <!--end panel-body-->
+          </div> <!--end collapseTwo panel-collapse-->
+        </div> <!--end panel-default-->
+
+        <div class="panel panel-default">
+
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-plus"></span>
+              What types of clients do you work with?
+              </a>
+            </h4>
+          </div> <!--end panel heading-->
+
+          <div id="collapseThree" class="panel-collapse collapse">
+            <div class="panel-body">
+            I work with all sorts of clients! While I would love to one-day work on a political campaign, with an environmental organization, or with a major home magazine (like Domaine) – I’d love to work with anyone! I ask only that we maintain an open dialogue to ensure that your site looks exactly like you want it to, and that you are respectful of those around you and of me during our time together.
+            </div> <!--end panel-body-->
+          </div> <!-- end collapseThree-->
+        </div> <!--end panel default-->
+
+        <div class="panel panel-default">
+
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><span class="glyphicon glyphicon-plus"></span>
+            What is your average turnaround time?
+            </a>
+          </h4>
+        </div> <!--end panel-heading-->
+
+        <div id="collapseFour" class="panel-collapse collapse">
+          <div class="panel-body">
+          My turnaround time will vary based on the size of the project that we undertake together. I will work with you to build an achievable timeline and stay on budget – it’s not in my interest or yours to waste time! Both of these skills were ones that I learned in the non-profit world, so I know how to use time efficiently.
+          </div> <!--end panel-body-->
+        </div> <!-- end collapseFour-->
+
+        </div> <!--end panel default-->
+
+        <div class="panel panel-default">
+
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive"><span class="glyphicon glyphicon-plus"></span>
+              Why should I hire you?
+              </a>
+            </h4>
+          </div> <!--end panel-heading-->
+
+          <div id="collapseFive" class="panel-collapse collapse">
+            <div class="panel-body">
+            I have an excellent attitude, a great eye, and am an extremely fast learner. If you can dream it, I can help you achieve it. Let’s chat about ways that I can help you take your goals to the next level of awesome.
+            </div> <!--end panel-body-->
+          </div> <!-- end collapseFive-->
+        </div> <!--end panel default-->
+      </div> <!--end panel group-->
+    </div> <!--end container-fluid-->
+
+    <!--end-FAQ-->
+
+    <!--contact-->
+
+    <div class="container-fluid anchor">
+
+      <div class="contact-image" id="contact">
+        <div class="header-contact">
+          <h1>Let's Chat</h1>
+          <h4><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:emilyann.chadwick@gmail.com">emilyann.chadwick@gmail.com</a><br>
+          <span class="glyphicon glyphicon-phone-alt"></span> (206) 359-5393</h4>
+        </div>
+      </div><!--contact-image-->
+
+      <!--<div class="main-contact">
+        <div class="row-contact">
+          <div class="together-contact col-xs-12 col-s-6 col-md-6 col-lg-6">
+            <div class="contact-column">
+              <h2>Why Work Together?</h2>
+                <p>As an individual new to the world of web development, I see opportunities for improvement where others may not. While I'm not an expert in the field, I have a drive to learn, an excitement for success, and a great attitude. Let's chat about opportunities for web developer jobs or freelance work.</p>
+            </div>--> <!--contact-column-->
+          <!--</div>--><!-- /col -->
+
+          <!--<div class="connect-contact col-xs-12 col-s-6 col-md-6 col-lg-6">
+            <div class="contact-column">
+              <h2>Connect</h2>
+                <span class="glyphicon glyphicon-envelope"></span> emilyann.chadwick@gmail.com<br>
+                <p><span class="glyphicon glyphicon-phone-alt"></span> (206) 359-5393</p>
+                <span class="glyphicon glyphicon-map-marker"></span> Seattle, WA<br>
+            </div> --><!--contact-column-->
+          <!--</div>--><!-- /col -->
+        <!--</div>--><!--row-contact -->
+      <!--</div>--><!--end main-contact-->
+    <!--</div>--><!--container-fluid-->
+
+    <!--end contact-->
 
 
     <!-- ============================= -->
@@ -186,6 +398,19 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <!-- Can place script tags with JavaScript files here -->
+
+    <script type="text/javascript">
+      var $root =$('html, body');
+      $('navbar-nav a').click(function() {
+        var href = $.attr(this, 'href');
+        $root.animate ({
+          scrollTop: $(href).offset ().top
+        }, 500, function () {
+          window.location.hash=href;
+        });
+        return false;
+      });
+    </script>
 
   </body>
 </html>
