@@ -41,8 +41,29 @@
 }*/
 
 .navbar-inverse .navbar-nav>li>a:hover{
-  color: #ade6d8;
+  color: teal;
   text-decoration: none;
+}
+
+.navbar-inverse .navbar-toggle {
+  background-color: teal;
+  border-color:teal;
+}
+
+.navbar-inverse .navbar-toggle:hover {
+  background-color: teal;
+}
+
+.navbar-inverse .navbar-toggle:focus {
+  background-color: teal;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  background-color: teal;
+}
+
+.item img {
+  width: 100%;
 }
 
 .anchor {
@@ -54,14 +75,18 @@
   color: white;
   width: 100%;
   text-transform: uppercase;
-  top: 40%;
+  top: 45%;
 }
 
 .slide h4 {
   position: absolute;
   color: white;
   width: 100%;
-  top: 50%;
+  top: 45%;
+}
+
+.btn-default:hover {
+  color: teal;
 }
 
 /*home page*/
@@ -92,10 +117,14 @@
 
 .intro-home {
   text-align: center;
-  background-color: #ade6d8;
   border-radius: 3%;
   margin: 1%;
+  margin-top: 5%;
   padding: 10px;
+}
+
+.intro-home h2 {
+  color: teal;
 }
 
 .row-index {
@@ -108,29 +137,24 @@
 
 /*about page*/
 
-/*.body-about {
-  padding-top: 70.5px;
-}*/
-
 .about-image {
   margin-left: -15px;
   margin-right: -15px;
-  background-image: url("../img/girl-book.jpg");
+  background-image: url("../img/about3.jpg");
   background-size:cover;
-  height: 350px;
-  line-height: 250px;
+  height: 400px;
+  padding: 100px;
+  background-attachment: fixed;
 }
 
 .header-about h1 {
-  text-align:left;
-  margin: 20px;
+  text-align:center;
   text-transform: uppercase;
   color: white;
   padding-top: 8%;
 }
 
 .about-col {
-  background-color: #ade6d8;
   margin: 3%;
   padding-top: .5%;
   padding-bottom: .5%;
@@ -144,6 +168,10 @@
   padding-top: 5px;
   padding-bottom: 5px;
   text-align: center;
+}
+
+.main-text p {
+  padding-top: 2%;
 }
 
 /*portfolio page*/
@@ -161,6 +189,10 @@
   border-radius: 3%;
 }
 
+#portfolio h1 {
+  color: teal;
+}
+
 /*FAQ page*/
 
 .main-faq {
@@ -168,21 +200,18 @@
   background-size: cover;
   margin-left: -15px;
   margin-right: -15px;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  height: 350px;
-  line-height: 350px;
+  background-attachment: fixed;
+  padding: 100px;
 }
 
 .main-faq h1 {
   color: white;
   text-align: center;
-  padding: 13% 10% 15% 10%;
 }
 
 .panel-default>.panel-heading {
-  background-color: #ade6d8;
-  /*padding: 1%;*/
+  background-color: teal;
+  color: white;
   text-align: center;
 }
 
@@ -217,6 +246,19 @@
   margin-right: -15px;
 }*/
 
+#contact {
+  background-image: url("../img/contact-2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  margin-left: -15px;
+  margin-right: -15px;
+  color: white;
+  text-align: center;
+  padding: 100px;
+  padding-top: 50px;
+  height: 400px;
+}
+
 .header-contact h1 {
   color: white;
   text-align: left;
@@ -225,29 +267,22 @@
   padding-top: 8%;
 }
 
-.contact-column {
-  background-color: #ade6d8;
-  border-radius: 3%;
-  margin: 3%;
-  padding: 3%;
-  text-align: center;
-}
-
 .glyphicon:hover {
   color: white;
   text-decoration: none;
 }
 
-#contact {
-  background-image: url("../img/contact-2.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  margin-left: -15px;
-  margin-right: -15px;
+#contact h1 {
+  text-align: center;
+}
+
+#contact h4 a {
   color: white;
-  padding: 100px;
-  padding-top: 50px;
-  height: 400px;
+}
+
+#contact h4 a:hover {
+  color: #ade6d8;
+  text-decoration: none;
 }
 
  /*Typography*/
@@ -273,15 +308,12 @@ li {
 }
 
 .about-col h2 {
-  font-family: Handlee, Helvetica, Futura, Arial, sans-serif;
-}
-
-.about-col p {
-  font-family: Handlee, Helvetica, Futura, Arial, sans-serif;
+  font-family: Helvetica, Futura, Arial, sans-serif;
+  color: teal;
 }
 
 .about-col li {
-  font-family: Handlee, Helvetica, Futura, Arial, sans-serif;
+  font-family: Helvetica, Futura, Arial, sans-serif;
 }
 
 .skills h3 {
@@ -289,9 +321,9 @@ li {
   /*text-transform: uppercase;*/
 }
 
-.main-text h3 {
+.main-text h2 {
   text-align: center;
-  text-transform: uppercase;
+  color: teal;
 }
 
 .main-text p {
