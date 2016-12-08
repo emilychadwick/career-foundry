@@ -197,12 +197,18 @@ li {
 
 /*footer*/
 
-footer {
-  padding: 15px;
-  float: right;
-  position: relative; left: -50%;
+.container-fluid {
+  width: 100%;
 }
 
-footer .icons {
-  position: relative; left: 50%;
+footer {
+  display: inline-block;
+  width: 100%;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.icon {
+  float: center;
+  padding: 10px;
 }
