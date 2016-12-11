@@ -125,12 +125,15 @@
   margin-right: -15px;
   background-attachment: fixed;
   padding: 100px;
+  height: 400px;
 }
 
 .main-faq h1 {
   color: white;
   text-align: center;
 }
+
+.panel-group { padding-top: 1%; }
 
 .panel-default>.panel-heading {
   background-color: teal;
@@ -163,6 +166,20 @@
   height: 400px;
 }
 
+@media only screen and (max-width: 801px) {
+  #contact {
+    background-image: url("../img/contact-2.jpg");
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  #contact {
+    background-image: url("../img/contact-2.jpg");
+    height: 600px;
+  }
+}
+
 #contact h1 { text-align: center; }
 
 #contact h4 a { color: white; }
@@ -172,17 +189,29 @@
   text-decoration: none;
 }
 
-.header-contact h1 {
+.row h1 {
   color: white;
   text-align: left;
-  margin: 20px;
+  /*margin: 20px;*/
   text-transform: uppercase;
-  padding-top: 8%;
+  /*padding-top: 5%;*/
+  float: top;
 }
 
 .glyphicon:hover {
   color: white;
   text-decoration: none;
+}
+
+.form-control {
+  width: 75%;
+  margin: 0 auto;
+  /*padding: 15px;*/
+}
+
+.btn {
+  margin: 1%;
+  background-color: teal;
 }
 
  /*Typography*/
@@ -197,7 +226,7 @@ li {
 
 /*footer*/
 
-.container-fluid {
+/*.container-fluid {
   width: 100%;
 }
 
@@ -211,4 +240,17 @@ footer {
 .icon {
   float: center;
   padding: 10px;
+}*/
+
+.footer-text {
+  padding: 10px;
+  text-emphasis: 1.5;
 }
+
+.fa {
+  transform: scale(2);
+  margin: 0 auto;
+  padding: 15px 10px 15px 10px;
+}
+
+

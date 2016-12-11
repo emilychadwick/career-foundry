@@ -17,6 +17,7 @@
 
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Handlee|Roboto:300" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -317,12 +318,45 @@
     <div class="container-fluid anchor">
 
       <div class="contact-image" id="contact">
-        <div class="header-contact">
-          <h1>Let's Chat</h1>
-          <h4><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:emilyann.chadwick@gmail.com">emilyann.chadwick@gmail.com</a><br>
-          <span class="glyphicon glyphicon-phone-alt"></span> (206) 359-5393</h4>
-        </div>
-      </div><!--contact-image-->
+        <div class="header-contact row">
+
+          <div class="chat col-md-4 col-lg-4">
+            <h1>Let's Chat</h1>
+            <h4>
+            <span class="glyphicon glyphicon-envelope"></span> <a href="mailto:emilyann.chadwick@gmail.com">emilyann.chadwick@gmail.com</a><br>
+            <span class="glyphicon glyphicon-phone-alt"></span> (206) 359-5393
+            </h4>
+          </div>
+
+          <form>
+
+            <div class="contact-box col-md-8 col-lg-8">
+
+              <h1>Reach Out</h1>
+
+              <div class="form-group">
+                <label for="name" class="sr-only">*Name</label>
+                <input type="text" class="form-control" placeholder="Name" id="name" required="required">
+                </input>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="sr-only">*Email address</label>
+                <input type="email" class="form-control" placeholder="Email" id="email" required="required">
+                </input>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="sr-only">Drop a line</label>
+                <textarea style="resize:none;" cols="40" rows="3" class="form-control message-box" placeholder="Drop a line" id="message"></textarea>
+
+                <button type="submit" class="btn btn-primary submit">Submit</button>
+              </div>
+            </div>
+          </form>
+
+        </div><!--end header contact-->
+      </div><!--end contact-image-->
 
     </div>  <!--end container-fluid-->
 
@@ -333,13 +367,19 @@
 
       <footer>
 
-          <div class="icon">&copy;</div>
+        <a href="https://www.instagram.com/emilyannchadwick"><i class="fa fa-instagram"></i></a>
+        <a href="https://github.com/emilychadwick"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/emilykaseberg"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
 
-          <div class="icon"><a href="https://twitter.com/emilykaseberg" class="twitter-follow-button" data-show-count="false">Follow @emilykaseberg</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+        <div class="footer-text"><p>Emily Chadwick 2016</p></div>
 
-          <div class="icon"><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fcareerfoundry%2F&width=96&layout=button&action=like&size=small&show_faces=true&share=true&height=65&appId" width="auto" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
+        <!--<div class="icon">&copy;</div>-->
 
-          <iframe width="300" height="auto" src="https://www.youtube.com/embed/hT8UZ8Y_GM0" frameborder="0" allowfullscreen></iframe>
+        <!--<div class="icon"><a href="https://twitter.com/emilykaseberg" class="twitter-follow-button" data-show-count="false">Follow @emilykaseberg</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>-->
+
+        <!--<div class="icon"><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fcareerfoundry%2F&width=96&layout=button&action=like&size=small&show_faces=true&share=true&height=65&appId" width="auto" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>-->
+
+        <!--<iframe width="300" height="auto" src="https://www.youtube.com/embed/hT8UZ8Y_GM0" frameborder="0" allowfullscreen></iframe>-->
 
       </footer>
 
