@@ -166,7 +166,7 @@
         </div> <!--end header -->
       </div> <!--about-image -->
 
-      <div class="container-fluid main-text">
+      <div class="main-text">
         <!--<h3>Still Interested?</h3>-->
 
         <p>I currently work in field known as association management, which is management for non-profit organizations. As a manager, I approve website designs, email templates, plan events, and more. While I enjoy the work that I do, there was a small, but nagging voice in the back of my head telling me that I didn't just need to approve websites, but that I could create them! I didn't need to make content for emails and newsletters, I could code how they looked. So, I decided to take the leap.<br><br>
@@ -218,9 +218,32 @@
 
     <div class="container-fluid anchor" id="faq">
 
-      <div class="main-faq">
+      <div class="main-faq" data-stellar-background-ratio="2" id="main-faq">
         <h1>FAQs</h1>
       </div> <!--end main faq-->
+
+      <div class="row">
+        <h2 class="learn-more">Learn More</h2>
+        <h2>
+          <div class="modal-button">
+            <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">View Resume/CV</button>
+          </div>
+          <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Emily Chadwick</h4>
+                </div>
+                <div class="modal-body">
+                  <embed id="resume" src="E.ChadwickResume.pdf">
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </h2>
+      </div>
 
       <div class="panel-group" id="accordion">
         <div class="panel panel-default">
@@ -309,6 +332,7 @@
           </div> <!-- end collapseFive-->
         </div> <!--end panel default-->
       </div> <!--end panel group-->
+
     </div> <!--end container-fluid-->
 
     <!--end-FAQ-->
@@ -398,6 +422,8 @@
 
     <!-- Can place script tags with JavaScript files here -->
 
+    <script src="js/jquery.stellar.min.js"></script>
+
     <script type="text/javascript">
       var $root =$('html, body');
       $('navbar-nav a').click(function() {
@@ -411,7 +437,11 @@
       });
     </script>
 
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    <script type="text/javascript">
+      $("main-faq").stellar();
+    </script>
+
+    <!-- <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> -->
 
   </body>
 </html>
