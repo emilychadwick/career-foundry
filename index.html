@@ -15,7 +15,7 @@
 
     <!-- Custom styles for this template  sgo here -->
 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/output.css">
     <link href="https://fonts.googleapis.com/css?family=Handlee|Roboto:300" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
@@ -28,6 +28,7 @@
   </head>
 
   <body data-spy="scroll" data-target=".navbar">
+
     <!--navbar starts here-->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container-fluid">
@@ -38,7 +39,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <div class="emilyChadwick navbar-brand">
+          <div class="navbar-brand">
             <a href="#">Home</a>
           </div> <!--end emilyChadwick-->
         </div> <!--end navbar-header-->
@@ -49,7 +50,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#faq">FAQs</a></li>
             <li><a href="#contact">Contact</a></li>
-          </ul>
+          </ul> <!--end nav-->
         </div> <!--end nav collapse-->
       </div> <!--end container-fluid-->
     </nav> <!--end nav-->
@@ -57,7 +58,7 @@
     <!--index-->
 
     <div class="container-fluid" id="index">
-      <div id="carousel-index" class="carousel slide" data-ride="carousel">
+      <div id="carousel-index" class="carousel slide carousel-slide" data-ride="carousel">
 
         <!--Indicators-->
         <ol class="carousel-indicators">
@@ -68,18 +69,18 @@
 
         <!--Wrapper for slides-->
         <div class="carousel-inner" role="listbox">
-          <div class="item active">
+          <div class="item carousel-item active">
             <img src="img/green-field.jpg" alt="field">
             <div class="carousel-caption">
             </div> <!--end carousel-caption"-->
           </div> <!--end item active-->
 
-          <div class="item">
+          <div class="item carousel-item">
             <img src="img/sunset-bridge.jpg" alt="bridge">
             <div class="carousel-caption">
             </div> <!--end carousel caption-->
           </div> <!--end item active-->
-          <div class="item">
+          <div class="item carousel-item">
             <img src="img/night-road.jpg" alt="road">
             <div class="carousel-caption">
             </div> <!--end carousel-caption-->
@@ -90,11 +91,11 @@
         <a class="left carousel-control" href="#carousel-index" role="button" data-slide="prev">
           <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
-        </a>
+        </a> <!--end left-->
         <a class="right carousel-control" href="#carousel-index" role="button" data-slide="next">
           <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
-        </a>
+        </a> <!--end right-->
 
         <h1>Emily Chadwick</h1>
 
@@ -103,31 +104,34 @@
 
     <div class="container">
 
-      <div class="row-index">
+      <div class="index-row">
         <div class="col-xs-12 col-s-6 col-md-4 col-lg-4 portfolio">
-          <div class="intro-home">
+          <div class="index-home">
           <h2>Portfolio Concept</h2>
+
             <p>I currently work as a non-profit manager, doing a little bit of everything, including the design and basic build out of web pages and communications. My portfolio will primarily focus on new work, as development is a whole new ballgame.</p>
 
-            <button type="button" class="btn btn-default top-btn" data-toggle="tooltip" data-placement="top" title="View my portfolio">More details &raquo;</button>
+            <button type="button" class="btn btn-default index-btn" data-toggle="tooltip" data-placement="top" title="View my portfolio">More details &raquo;</button>
+
             </div><!--intro-home-->
         </div><!-- /col -->
 
         <div class="col-xs-12 col-s-6 col-md-4 col-lg-4 project-goals">
-          <div class="intro-home">
+          <div class="index-home">
           <h2>Project Goals</h2>
+
             <p>Though my expected graduation date is May 19, 2017 - my goal is to finish this course no later than May 1, almost three weeks ahead of schedule. As I work full-time, I plan to commit 20 - 25 hours per week to studying.</p>
 
-            <button type="button" class="btn btn-default top-btn" data-toggle="tooltip" data-placement="top" title="More about me">More details &raquo;</button>
+            <button type="button" class="btn btn-default index-btn" data-toggle="tooltip" data-placement="top" title="More about me">More details &raquo;</button>
             </div> <!--intro-home-->
         </div><!-- /col -->
 
         <div class="col-xs-12 col-s-6 col-md-4 col-lg-4 course-goals">
-          <div class="intro-home">
+          <div class="index-home">
           <h2>Course Goals</h2>
           <p>I am using this course so that I can change careers. Seattle is a huge tech hub, and I want in on the fun! After this course, my goal is to be hired as a junior developer, preferrably front-end. Eventually, I'd like to be able to freelance.</p>
 
-          <button type="button" class="btn btn-default top-btn" data-toggle="tooltip" data-placement="top" title="More about me">More details &raquo;</button>
+          <button type="button" class="btn btn-default index-btn" data-toggle="tooltip" data-placement="top" title="More about me">More details &raquo;</button>
 
           </div><!--intro-home-->
         </div><!-- /col -->
@@ -136,19 +140,19 @@
 
     <!--portfolio-->
 
-    <div class="container-fluid container-work anchor" id="portfolio">
+    <div class="container-fluid portfolio-container anchor" id="portfolio">
       <h1>Work</h1>
       <div class="work-row" id="work">
 
         <div class="col-xs-12 col-s-6 col-md-6 col-lg-6">
-          <div class="col-grid">
-            <img src="img/calculator.jpg" class="img-work img-responsive">
+          <div class="portfolio-col-grid">
+            <img src="img/calculator.jpg" class="portfolio-img img-responsive">
             <br>I created this calculator using HTML and CSS. Divs are used to house the numbers and CSS tools help visually guide the user of this tool. For now, this a non-functioning calculator (though try hovering over the numbers!). As my skills grow, I plan to use JavaScript to turn this into a functioning tool. This project took me approximately 1.5 hours.
           </div><!--end col-grid-->
         </div><!--end col-xs-12 etc-->
         <div class="col-xs-12 col-s-6 col-md-6 col-lg-6">
-          <div class="col-grid">
-            <img src="img/homepage.jpg" class="img-work img-responsive">
+          <div class="portfolio-col-grid">
+            <img src="img/homepage.jpg" class="portfolio-img img-responsive">
             <br>This site was created using primarily HTML, CSS, and Twitter Bootstrap. There are some links to JavaScript into which I will further dive in later lessons. This site took approximately two weeks to build out from start to finish (including time spent learning all of these new skills), but will continue to grow as I do.
           </div><!--end col-grid-->
         </div><!--end col-xs-12 etc-->
@@ -164,13 +168,12 @@
     <div class="container-fluid anchor" id="about">
 
       <div class="about-image">
-        <div class="header-about">
+        <div class="about-header">
           <h1>About Me</h1>
         </div> <!--end header -->
       </div> <!--about-image -->
 
-      <div class="main-text">
-        <!--<h3>Still Interested?</h3>-->
+      <div class="about-main">
 
         <p>I currently work in <a href="http://www.zzeem.com/WhatisAssociationManagement.aspx" title="for-profit management of non-profit organizations" id="association" data-placement="top">association management</a>. As a manager, I approve website designs, email templates, plan events, and more. While I enjoy the work that I do, there was a small, but nagging voice in the back of my head telling me that I didn't just need to approve websites, but that I could create them! I didn't need to make content for emails and newsletters, I could code how they looked. So, I decided to take the leap.<br><br>
 
@@ -221,14 +224,14 @@
 
     <div class="container-fluid anchor" id="faq">
 
-      <div class="main-faq" id="main-faq">
+      <div class="faq-main">
         <h1>FAQs</h1>
       </div> <!--end main faq-->
 
       <div class="row">
-        <h2 class="learn-more">Learn More</h2>
+        <h2 class="faq-learn-more">Learn More</h2>
         <h2>
-          <div class="modal-button">
+          <div class="resume-btn">
             <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">View Resume/CV</button>
           </div> <!--end modal button-->
           <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -344,15 +347,15 @@
     <div class="container-fluid anchor">
 
       <div class="contact-image" id="contact">
-        <div class="header-contact row">
+        <div class="header-contact row contact-row">
 
           <div class="chat col-md-4 col-lg-4">
             <h1>Let's Chat</h1>
             <h4>
             <span class="glyphicon glyphicon-envelope"></span> <a href="mailto:emilyann.chadwick@gmail.com">emilyann.chadwick@gmail.com</a><br>
             <span class="glyphicon glyphicon-phone-alt"></span> (206) 359-5393
-            </h4>
-          </div>
+            </h4> <!--end contact icons-->
+          </div> <!--end chat-->
 
           <form>
 
@@ -364,53 +367,41 @@
                 <label for="name" class="sr-only">*Name</label>
                 <input type="text" class="form-control" placeholder="Name" id="name" required="required">
                 </input>
-              </div>
+              </div> <!--end form-group-->
 
               <div class="form-group">
                 <label for="email" class="sr-only">*Email address</label>
                 <input type="email" class="form-control" placeholder="Email" id="email" required="required">
                 </input>
-              </div>
+              </div> <!--end form-group-->
 
               <div class="form-group">
                 <label for="message" class="sr-only">Drop a line</label>
                 <textarea style="resize:none;" cols="40" rows="3" class="form-control message-box" placeholder="Drop a line" id="message"></textarea>
-
-                <button type="submit" class="btn btn-primary submit">Submit</button>
-              </div>
-            </div>
-          </form>
-
+                <button type="submit" class="btn btn-primary submit contact-btn">Submit</button>
+              </div> <!--end form-group-->
+            </div> <!--end contact box-->
+          </form> <!--end form-->
         </div><!--end header contact-->
       </div><!--end contact-image-->
-
     </div>  <!--end container-fluid-->
 
     <!--end contact-->
 
     <!--footer-->
+
     <div class="container-fluid">
-
       <footer>
-
         <a href="https://www.instagram.com/emilyannchadwick"><i class="fa fa-instagram"></i></a>
         <a href="https://github.com/emilychadwick"><i class="fa fa-github-square" aria-hidden="true"></i></a>
         <a href="https://www.linkedin.com/in/emilykaseberg"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
 
-        <div class="footer-text"><p>Emily Chadwick 2016</p></div>
+        <div class="footer-text">
+          <p>Emily Chadwick 2016</p>
+        </div> <!--end footer text-->
 
-        <!--<div class="icon">&copy;</div>-->
-
-        <!--<div class="icon"><a href="https://twitter.com/emilykaseberg" class="twitter-follow-button" data-show-count="false">Follow @emilykaseberg</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>-->
-
-        <!--<div class="icon"><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fcareerfoundry%2F&width=96&layout=button&action=like&size=small&show_faces=true&share=true&height=65&appId" width="auto" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>-->
-
-        <!--<iframe width="300" height="auto" src="https://www.youtube.com/embed/hT8UZ8Y_GM0" frameborder="0" allowfullscreen></iframe>-->
-
-      </footer>
-
-    </div>
-
+      </footer> <!--end footer-->
+    </div> <!--end container-fluid-->
 
     <!-- ============================= -->
     <!-- All your JavaScript comes now -->

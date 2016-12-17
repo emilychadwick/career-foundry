@@ -1,0 +1,262 @@
+.body {
+  position: relative;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+/*navigation*/
+
+.anchor {
+  padding-top: 50px;
+}
+
+.navbar-brand {
+  text-transform: uppercase;
+
+  a {
+    color: black;
+  }
+}
+
+.navbar { background-color: white; }
+
+.navbar-inverse {
+
+  .navbar-nav>li>a:hover {
+    color: teal;
+    text-decoration: none;
+  }
+
+  .navbar-toggle {
+    background-color: teal;
+    border-color: teal;
+  }
+
+  .navbar-toggle:hover {
+    background-color: teal;
+  }
+
+  .navbar-toggle:focus {
+    background-color: teal;
+  }
+
+  .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    background-color: teal;
+  }
+
+}
+
+/*buttons - general*/
+
+.btn {
+  margin: 1%;
+  background-color: teal;
+}
+
+.btn:hover { background-color: teal; }
+
+/*index*/
+
+.container-fluid { text-align: center; }
+
+.carousel {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.carousel-item img { width: 100%; }
+
+.carousel-slide h1 {
+  position: absolute;
+  color: white;
+  width: 100%;
+  text-transform: uppercase;
+  top: 45%;
+}
+
+.index-home {
+  text-align: center;
+  border-radius: 3%;
+  margin: 1%;
+  margin-top: 5%;
+  padding: 10px;
+
+  h2 {
+    color: teal;
+  }
+}
+
+.index-row { display: inline-block; }
+
+.index-btn { color: white; }
+
+/*portfolio*/
+
+.portfolio-work { text-align: center; }
+
+.portfolio-col-grid {
+  margin: 1%;
+  text-align: center;
+}
+
+.portfolio-img{
+  border-radius: 3%;
+  margin: 0 auto;
+}
+
+#portfolio h1 { color: teal; }
+
+/*about*/
+
+.about-image {
+  margin-left: -15px;
+  margin-right: -15px;
+  background-image: url("../img/about3.jpg");
+  background-size: cover;
+  height: 400px;
+  padding: 100px;
+  background-attachment: fixed;
+}
+
+.about-header h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  padding-top: 8%;
+}
+
+.about-main {
+  clear: both;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.about-main p { padding-top: 2%; }
+
+.about-main h2 { color: teal; }
+
+.about-col {
+  margin: 3%;
+  padding-top: .5%;
+  padding-bottom: .5%;
+  padding-left: 3%;
+  padding-right: 3%;
+  border-radius: 3%;
+
+  h2 {
+    color: teal;
+  }
+}
+
+/*FAQ*/
+
+.faq-main {
+  background-image: url("../img/faq2.jpg");
+  background-size: cover;
+  margin-left: -15px;
+  margin-right: -15px;
+  background-attachment: fixed;
+  padding: 100px;
+  height: 400px;
+
+  h1 {
+    color: white;
+    text-align: center;
+  }
+}
+
+.faq-learn-more {
+  text-align: left;
+  float: left;
+  padding: 15px;
+}
+
+.resume-btn {
+  float: right;
+  padding: 15px;
+}
+
+#resume {
+  height: 700px;
+  width: 100%;
+  padding: 10px;
+}
+
+.panel-group {
+  padding-top: 1%;
+}
+
+.panel-default>.panel-heading {
+  background-color: teal;
+  color: white;
+  text-align: center;
+}
+
+#collapseOne { text-align: center;}
+
+#collapseTwo { text-align: center; }
+
+#collapseThree { text-align: center; }
+
+#collapseFour { text-align: center; }
+
+#collapseFive{ text-align: center; }
+
+/*contact*/
+
+#contact {
+  background-image: url("../img/contact-2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  margin-left: -15px;
+  margin-right: -15px;
+  color: white;
+  text-align: center;
+  padding: 100px;
+  padding-top: 50px;
+  height: 100%;
+
+  h1 {
+    text-align: center;
+  }
+
+  h4 a {
+    text-align: center;
+    color: white;
+  }
+
+  h4 a:hover {
+    color: #ade6d8;
+    text-decoration: none;
+  }
+}
+
+.contact-row h1 {
+  color: white;
+  text-align: left;
+  text-transform: uppercase;
+  float: top;
+}
+
+.glyphicon:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.form-control {
+  width: 75%;
+  margin: 0 auto;
+}
+
+/*footer*/
+
+.footer-text {
+  padding: 10px;
+  text-emphasis: 1.5;
+}
+
+.fa {
+  transform: scale(2);
+  margin: 0 auto;
+  padding: 15px 10px 15px 10px;
+}
