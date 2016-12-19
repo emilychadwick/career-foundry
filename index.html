@@ -381,6 +381,9 @@
                 <button type="submit" class="btn btn-primary submit contact-btn">Submit</button>
               </div> <!--end form-group-->
             </div> <!--end contact box-->
+
+            <p id="visible-comment"></p>
+
           </form> <!--end form-->
         </div><!--end header contact-->
       </div><!--end contact-image-->
@@ -404,7 +407,7 @@
     </div> <!--end container-fluid-->
 
     <!-- ============================= -->
-    <!-- All your JavaScript comes now -->
+    <!-- All JavaScript comes now -->
     <!-- ============================= -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -417,31 +420,7 @@
 
     <script src="js/jquery.stellar.min.js"></script>
 
-    <script type="text/javascript">
-      var $root =$('html, body');
-      $('navbar-nav a').click(function() {
-        var href = $.attr(this, 'href');
-        $root.animate ({
-          scrollTop: $(href).offset ().top
-        }, 500, function () {
-          window.location.hash=href;
-        });
-        return false;
-      });
-    </script>
-
-    <script type="text/javascript">
-      $(window).stellar();
-    </script>
-
-    <script>
-      $(function () {
-        $('#association').tooltip();
-        $('[data-toggle="tooltip"]').tooltip();
-      });
-    </script>
-
-    <!-- <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> -->
+    <script src="js/scripts.js"></script>
 
   </body>
 </html>
