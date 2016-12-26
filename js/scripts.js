@@ -46,24 +46,24 @@ $(document).ready(function () {
 
   });
 
-//work section
-for(var i = 0; i < works.length; ++i) {
-  $("#work").append("\
-    <div class='col-xs-12 col-s-6 col-md-6 col-lg-6'>\
-      <div class='portfolio-col-grid'>\
-        <img class='img-responsive portfolio-img' src='" + works[i] + "'>\
+  //work section
+  for(var i = 0; i < works.length; ++i) {
+    $("#work").append("\
+      <div class='col-xs-12 col-s-6 col-md-6 col-lg-6'>\
+        <div class='portfolio-col-grid'>\
+          <a href='" + works[i].url + "' class='work-img'>\
+            <img class='img-responsive portfolio-img' src='" + works[i].pic + "'>\
+              <span class='info'><p class='proj-title'>Title:</p>" + works[i].title + "</span>\
+          </a>\
+        </div>\
       </div>\
-    </div>\
     ");
-
-  var images = $("#work .img-responsive");
-  if (i%2 === 0) {
-    $(images[i]).css("border", "3px solid DodgerBlue");
-  } else {
-    $(images[i]).css("border", "3px solid salmon");
   };
 
-
-};
+  $(".work-img").mouseenter(function(){
+    $(".info", this).show();
+  }).mouseleave(function(){
+    $(".info", this).hide();
+  });
 
 });

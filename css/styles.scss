@@ -105,6 +105,29 @@
 
 #portfolio h1 { color: teal; }
 
+.work-img {
+  display: block; /*centers element with margin*/
+  margin: auto; /*center image inside column*/
+  position: relative; /*need for .info position*/
+}
+
+.info {
+  position: absolute; /*move text around, not worry about image*/
+  top: 18%;
+  left: 31%;
+  color: dark grey;
+  font-weight: 700;
+  font-family: Helvetica;
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  line-height: 1.6;
+  display: none;
+}
+
+.proj-title {
+  font-weight: 150;
+}
+
 /*about*/
 
 .about-image {
