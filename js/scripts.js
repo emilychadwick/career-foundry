@@ -67,3 +67,16 @@ $(document).ready(function () {
   });
 
 });
+
+//map
+
+var map;
+var initMap = function() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 47.606, lng: -122.332},
+    zoom: 8
+  });
+
+}
+
+
